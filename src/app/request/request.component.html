@@ -1,0 +1,14 @@
+<p>request works!</p>
+<p id="professionalId"></p>
+<p id="professionalpno"></p>
+<p id="professionaltype"></p>
+<p id="professionalptype"></p>
+<p id="professionallatitude"></p>
+<p id="professionallongitude"></p>
+<p id="professionalbusy"></p>
+<p id="professionaltimestamp"></p>
+<h4 id="result"></h4>
+<button type="button" class="btn btn-primary" (click)="generateRequests(1)">Generate Request for Home Repair</button>
+<button type="button" class="btn btn-primary" (click)="generateRequests(2)">Generate Request fro Electrical Repair</button>
+<button type="button" class="btn btn-primary" (click)="back()" [routerLink]="['/dashboard-component']">< Back</button>
+<button type="button" class="btn btn-primary" (click)="signout()" [routerLink]="['/login-component']">SignOut</button>

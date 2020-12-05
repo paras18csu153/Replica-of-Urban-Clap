@@ -1,0 +1,39 @@
+<p>register works!</p>
+<form style="width: 400px">
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="addon-wrapping">Email :</span>
+        <input id="username" type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+        <div class="input-group-append">
+            <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+        </div>
+    </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="addon-wrapping">Password :</span>
+        <input id="password" type="password" class="form-control" placeholder="Password" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+    </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="addon-wrapping">Phone :</span>
+        <input id="pno" type="text" class="form-control" placeholder="Phone number" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+    </div>
+    <label for="cars">Choose type:</label>
+
+    <select (change)="visible(2)" name="cars" id="cars">
+    <option value="" selected disabled hidden>Choose here</option>
+    <option value="Customer">Customer</option>
+    <option value="Professional">Professional</option>
+    </select>
+    <br>
+    <label for="ptype">Choose Professional type:</label>
+    <select name="ptype" id="ptype">
+    <option value="" selected disabled hidden>Choose here</option>
+    <option value="House Repair">House Repair</option>
+    <option value="Electric Repair">Electric Repair</option>
+    </select>
+
+    <br>
+    <button [routerLink]="['/dashboard-component']" type="button" class="btn btn-primary" (click)="register()">
+      Register
+    </button>
+    <button [routerLink]="['/login-component']" type="button" class="btn btn-primary" (click)="login()">LOGIN</button>
+</form>
+<p id="result"></p>

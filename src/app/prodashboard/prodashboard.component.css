@@ -1,0 +1,9 @@
+* :focus {
+    outline: none;
+}
+
+button,
+p {
+    margin-top: 15px;
+    margin-left: 15px;
+}

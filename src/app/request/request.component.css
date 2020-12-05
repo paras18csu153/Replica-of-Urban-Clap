@@ -1,0 +1,10 @@
+* :focus {
+    outline: none;
+}
+
+button,
+p,
+h4 {
+    margin-top: 15px;
+    margin-left: 15px;
+}

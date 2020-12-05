@@ -1,0 +1,19 @@
+<p>login works!</p>
+
+<form style="width: 400px;">
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="addon-wrapping">Email :</span>
+        <input id="username" type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+            <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+        </div>
+    </div>
+
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="addon-wrapping">Password :</span>
+        <input id="password" type="password" class="form-control" placeholder="Password" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    </div>
+    <button [routerLink]="['/dashboard-component']" type="button" class="btn btn-primary" (click)="login()">Login</button>
+    <button [routerLink]="['/register-component']" type="button" class="btn btn-primary" (click)="register()">Register</button>
+</form>
+<p id="result"></p>

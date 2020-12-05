@@ -1,0 +1,13 @@
+button,
+p {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+#error {
+    color: red;
+}
+
+* :focus {
+    outline: none;
+}
